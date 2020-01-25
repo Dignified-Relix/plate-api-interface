@@ -1,0 +1,14 @@
+{
+  "end_point": "https://api.google.com",
+  "api_key": "123abc",
+  "api_token": "abc123",
+  "api_bearer": "",
+  "routes": {
+    "get": {
+      "get_1": "get_1_uri"
+    },
+    "post": {
+      "post_1": "post_1_uri"
+    }
+  }
+}
