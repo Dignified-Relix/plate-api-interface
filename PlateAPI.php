@@ -4,6 +4,7 @@ namespace PlateAPI;
 * Plate API Interface
 * @author Donald Harper (Dignified Relix)
 **/
+define( 'ABS_PATH', __DIR__ );
 
 class Autoloader {
   public static function autoload() {
@@ -13,4 +14,8 @@ class Autoloader {
 }
 Autoloader::autoload();
 
+if( class_exists( 'Log' ) ) {
+  if( !isset( $Log ) ) $Log = new Log();
+  $Log->post( 'TEST' );
+}
 ?>
